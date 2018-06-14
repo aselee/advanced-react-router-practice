@@ -6,7 +6,6 @@ function Profiles(props) {
     return (
       <div key={i}>
         {user.firstName} - {user.lastName}
-        <a href="#"> View </a>
       </div>);
   });
   return (   

@@ -2,8 +2,8 @@ import React from "react";
 import {connect} from "react-redux";
 
 function Profile(props) {
-  const userId = 0;
-  const user = props.users.find(u => u.id == userId) || {};
+  const userId = props.match.params.id;
+  const user = props.users.find(u => u.id === userId) || {};
   return (   
     <div>
       <h3>{user.firstName} {user.lastName}</h3>
